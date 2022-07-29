@@ -24,7 +24,7 @@ Determine which green energy stock is a better investment for our clients.
 ## Objectives
 1. Find the total daily volume and yearly return for the DAQO stock.
 2. Find the total daily volume and yearly return for all green energy stocks.
-
+3. Add formatting to the results worksheets. 
 
 ## Resources
 - Data Sources: green_stocks.xlsx, green_stocks.xlsm
@@ -53,7 +53,8 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 		- Find the starting price for the current ticker.
 		- Find the ending price for the current ticker.
 	- Sixth, we output the data for the current ticker to a new row so we need to slightly alter the code from before so that the output for each ticker prints on a new row. This is a case where using Cells() is much easier than using Range().
-
+- Next, we applied some formatting to the results worksheets to make it easier to read. We constructed a new macro and wrote code to change font styles, add borders, and set number formats among other things. 
+- Furthermore, we used conditional formatting to change the color of the cell based on its value.
 
 
 ## Results
@@ -69,6 +70,12 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 - Here is what the results were for all green energy stocks: <br> 
 
 	|![All Green Energy Stocks Returns - 2018](./Resources/all_stocks_returns_2018.png)|
+	|-|
+- Adding formatting to the worksheet tables makes it easier to read and understand at a glance. <br>
+	As such, we applied text and color formatting to the All Stock Analysis worksheet so that positive returns were green and negative returns red. <br>
+	This was feasible by looping through each of the returns, and if the return was positive, we made the background color green; if the return was negative, we made the background red; otherwise, we cleared the background color.
+	
+	|![All Green energy Stocks Returns - 2018 - Formatted](./Resources/all_stocks_returns_2018_formatted.png)|
 	|-|
 
 
