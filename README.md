@@ -61,8 +61,11 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 - Furthermore, we used conditional formatting to change the color of the cell based on its value.
 - We inserted buttons and assigned them to analysis macros on different sheets of the workbook. 
 - We wanted to add interactivity to our macros; specifically, to allow the user to input the desired year for the analysis. <br>
-	- To get the user's input, we used the InputBox() command. InputBox works like MsgBox but contains a text box to get input from the user.
-	- 
+	- To get the user's input, we used the InputBox() command. 
+	- InputBox works like MsgBox but contains a text box to get input from the user.
+	- We also reassigned the Buttons to the year-based macro for the question window to pop up whenever the user clicks the button. 
+	- The formatting will reset the coloring with the changing of analysis year once the formatting button is clicked. 
+
 
 
 ## Results
@@ -90,6 +93,17 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 - We have also inserted buttons to clear the analysis on any specific sheets to allow the user to recreate the analysis results for each sheet separately. 
 - We created a user-friendly analysis macro that will take the input of the user about the desired year and apply the analysis on all stocks values from that year. 
 - The results will display on the All Stock Analysis sheet with the right year of choice displayed at the top. 
+- We timed the performance of the basic code we had built thus far and recorded the output. 
+	- The first run of the analysis code for the year 2017 took 0.8125 seconds.
+	- The first run of the analysis code for the year 2018 took 0.8125 seconds. <br>
+	
+	|![All Stocks Analysis - 2017 - Timed.](./Resources/all_stocks_returns_2017_time.png)|
+	|-|
+	|![All Stocks Analysis - 2018 - Timed.}(./Resources/all_stocks_returns_2018_time.png)|
+
+
+
+
 
 ## Recommendations
 
