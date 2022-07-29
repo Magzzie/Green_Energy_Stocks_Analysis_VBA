@@ -99,7 +99,8 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 	
 	|![All Stocks Analysis - 2017 - Timed.](./Resources/all_stocks_returns_2017_time.png)|
 	|-|
-	|![All Stocks Analysis - 2018 - Timed.}(./Resources/all_stocks_returns_2018_time.png)|
+	|![All Stocks Analysis - 2018 - Timed.](./Resources/all_stocks_returns_2018_time.png)|
+	
 
 
 
