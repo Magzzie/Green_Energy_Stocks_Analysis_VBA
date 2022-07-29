@@ -24,8 +24,8 @@ Using code to automate analyses, allows us to reuse it with any stock and reduce
 Determine which green energy stock is a better investment for our clients. 
 
 ## Objectives
-1. find the total daily volume and yearly return for the DAQO stock.
-
+1. Find the total daily volume and yearly return for the DAQO stock.
+2. Find the total daily volume and yearly return for all green energy stocks.
 
 
 ## Resources
@@ -42,6 +42,19 @@ especially if they need to be done repeatedly.
 - We Calculated the total daily trading volumn of the DAQU stock using conditionals and a for loop to go through all the rows with the ticker DQ and add the daily volumn, 
 then export the sum to a cell in a different sheet (DQ Analysis worksheet) using the right sheet activation command. 
 - We calculated the difference between the starting price and ending price of DQ stock in 2018 using conditionals inside a for loop through all the rows with the DQ ticker in the first cell. 
+- To run analysis on all of the stocks, we needed to create a program flow that loops through all of the tickers.
+- We created a new workbook sheet to hold the analysis of all stocks then we constructed a subroutine for formatting and calculations. 
+	- First, we formatted the output sheet on the "All Stocks Analysis" worksheet
+	- Second, we initialized an array of all tickers.
+	- Third, we formulated the analysis plan, initialized variables for the starting price and ending price, activated the data worksheet, and got the number of rows to loop over. 
+	- Fourth, we established a for loop to go through the tickers because before we get to the inner loop, we need to consider any values that need to be initialized before the inner loop starts. <br>
+	Every time we finish analysis on one ticker, we need to reset the total volume to zero. <br> This means the line totalVolume = 0 is inside the ticker loop, but outside of the row loop.
+	- Fifth, we established an inner for loop to go through the rows in the data and calcuate the values. <br>
+		Step 5 consists of three parts that can be accomplished with the code previously used for DQ calculations but with minor adjustments: <br>
+		- Find the total volume for the current ticker.
+		- Find the starting price for the current ticker.
+		- Find the ending price for the current ticker.
+	- Sixth, we output the data for the current ticker to a new row so we need to slightly alter the code from before so that the output for each ticker prints on a new row. This is a case where using Cells() is much easier than using Range().
 
 
 
@@ -54,7 +67,11 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 - The total daily volume of DQ stock is shown in the "DQ Analysis" worksheet: DQ traded 107,873,900 shares in 2018.
 - Upon calculating the difference between the ending price and starting price of trading for the DQ stock we found that Daqo dropped over 63% in 2018. 
 - Therefore, we started looking into other stocks that might be a better green energy investment. 
+- We repurposed the code used to calcluate the total daily volume and yearly return of the DQ stock to calculate these for all green energy stocks and collected the results in a new worksheet. 
+- Here is what the results were for all green energy stocks: <br> 
 
+	|![All Green Energy Stocks Returns - 2018](./Resources/all_stocks_returns_2018.png)|
+	|-|
 
 
 
