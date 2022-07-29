@@ -27,7 +27,7 @@ Determine which green energy stock is a better investment for our clients.
 3. Add formatting to the results worksheets. 
 4. Create **Buttons** to easily run analysis and other functions.
 5. Update the code to run the stock analysis for each year in the workbook. 
-
+6. Create a timer to assess the performance of the basic analysis code. 
 
 
 ## Resources
@@ -65,7 +65,8 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 	- InputBox works like MsgBox but contains a text box to get input from the user.
 	- We also reassigned the Buttons to the year-based macro for the question window to pop up whenever the user clicks the button. 
 	- The formatting will reset the coloring with the changing of analysis year once the formatting button is clicked. 
-
+- We created a timer that will deduct the difference between two time variables and return the elapsed time for the loop executing in between for each year. <br>
+The results of the time will show in a message box for each analysis run. 
 
 
 ## Results
