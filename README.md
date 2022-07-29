@@ -42,6 +42,7 @@ especially if they need to be done repeatedly.
 - We Calculated the total daily trading volumn of the DAQU stock using conditionals and a for loop to go through all the rows with the ticker DQ and add the daily volumn, 
 then export the sum to a cell in a different sheet (DQ Analysis worksheet) using the right sheet activation command. 
 - We calculated the difference between the starting price and ending price of DQ stock in 2018 using conditionals inside a for loop through all the rows with the DQ ticker in the first cell. 
+- To run analyses on all of the stocks, we needed to create a program flow that loops through all of the tickers.
 
 
 
