@@ -25,6 +25,10 @@ Determine which green energy stock is a better investment for our clients.
 1. Find the total daily volume and yearly return for the DAQO stock.
 2. Find the total daily volume and yearly return for all green energy stocks.
 3. Add formatting to the results worksheets. 
+4. Create **Buttons** to easily run analysis and other functions.
+
+
+
 
 ## Resources
 - Data Sources: green_stocks.xlsx, green_stocks.xlsm
@@ -55,7 +59,7 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 	- Sixth, we output the data for the current ticker to a new row so we need to slightly alter the code from before so that the output for each ticker prints on a new row. This is a case where using Cells() is much easier than using Range().
 - Next, we applied some formatting to the results worksheets to make it easier to read. We constructed a new macro and wrote code to change font styles, add borders, and set number formats among other things. 
 - Furthermore, we used conditional formatting to change the color of the cell based on its value.
-
+- We inserted buttons and assigned them to analysis macros on different sheets of the workbook. 
 
 ## Results
 - Total number of records is 3,013 for 12 green energy stocks for each of the years 2017 and 2018.
@@ -77,8 +81,9 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 	
 	|![All Green energy Stocks Returns - 2018 - Formatted](./Resources/all_stocks_returns_2018_formatted.png)|
 	|-|
-
-
+- To simplify the analysis process for the end-users of our code, we created buttons in the worksheet. <br>
+	Now any user of the .xlsm code can run the previous calculations for all stocks with the click of a button in the same worksheet.
+- We have also inserted buttons to clear the analysis on any specific sheets to allow the user to recreate the analysis results for each sheet separately. 
 
 
 ## Recommendations
@@ -87,3 +92,24 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
