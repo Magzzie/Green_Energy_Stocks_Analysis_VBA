@@ -25,6 +25,10 @@ Determine which green energy stock is a better investment for our clients.
 1. Find the total daily volume and yearly return for the DAQO stock.
 2. Find the total daily volume and yearly return for all green energy stocks.
 3. Add formatting to the results worksheets. 
+4. Create **Buttons** to easily run analysis and other functions.
+5. Update the code to run the stock analysis for each year in the workbook. 
+
+
 
 ## Resources
 - Data Sources: green_stocks.xlsx, green_stocks.xlsm
@@ -55,6 +59,13 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 	- Sixth, we output the data for the current ticker to a new row so we need to slightly alter the code from before so that the output for each ticker prints on a new row. This is a case where using Cells() is much easier than using Range().
 - Next, we applied some formatting to the results worksheets to make it easier to read. We constructed a new macro and wrote code to change font styles, add borders, and set number formats among other things. 
 - Furthermore, we used conditional formatting to change the color of the cell based on its value.
+- We inserted buttons and assigned them to analysis macros on different sheets of the workbook. 
+- We wanted to add interactivity to our macros; specifically, to allow the user to input the desired year for the analysis. <br>
+	- To get the user's input, we used the InputBox() command. 
+	- InputBox works like MsgBox but contains a text box to get input from the user.
+	- We also reassigned the Buttons to the year-based macro for the question window to pop up whenever the user clicks the button. 
+	- The formatting will reset the coloring with the changing of analysis year once the formatting button is clicked. 
+
 
 
 ## Results
@@ -77,6 +88,19 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 	
 	|![All Green energy Stocks Returns - 2018 - Formatted](./Resources/all_stocks_returns_2018_formatted.png)|
 	|-|
+- To simplify the analysis process for the end-users of our code, we created buttons in the worksheet. <br>
+	Now any user of the .xlsm code can run the previous calculations for all stocks with the click of a button in the same worksheet.
+- We have also inserted buttons to clear the analysis on any specific sheets to allow the user to recreate the analysis results for each sheet separately. 
+- We created a user-friendly analysis macro that will take the input of the user about the desired year and apply the analysis on all stocks values from that year. 
+- The results will display on the All Stock Analysis sheet with the right year of choice displayed at the top. 
+- We timed the performance of the basic code we had built thus far and recorded the output. 
+	- The first run of the analysis code for the year 2017 took 0.8125 seconds.
+	- The first run of the analysis code for the year 2018 took 0.8125 seconds. <br>
+	
+	|![All Stocks Analysis - 2017 - Timed.](./Resources/all_stocks_returns_2017_time.png)|
+	|-|
+	|![All Stocks Analysis - 2018 - Timed.}(./Resources/all_stocks_returns_2018_time.png)|
+
 
 
 
@@ -87,3 +111,24 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
