@@ -86,11 +86,6 @@ The timing results will show in a message box for each analysis run.
 	|![Formatting in Refactored Code.](./Resources/refactored_formatting.png)|
 	|-|
 
-- Repeated runs of the code decreased the run time even further. 
-
-	|![Rerun Refactored Time 2018](./Resources/all_stocks_returns_2017_time_rerun.png)|![Rerun Refactored Time 2018](./Resources/all_stocks_returns_2018_time_rerun.png)|
-	|-|-|
-
 - Finally, we inserted another button that can execute the refactored code without accessing the developer tools. 
 
 ## Results
@@ -139,7 +134,12 @@ And if it does, it may take a long time to execute.
 	|![All Stocks Analysis Refactored- 2017 - Timed.](./Resources/all_stocks_returns_2017_time_refactored.png)|
 	|-|
 	|![All Stocks Analysis Refactored- 2018 - Timed.](./Resources/all_stocks_returns_2018_time_refactored.png)|
+	
+- Repeated runs of the code decreased the run time even further. 
 
+	|![Rerun Refactored Time 2018](./Resources/all_stocks_returns_2017_time_rerun.png)|![Rerun Refactored Time 2018](./Resources/all_stocks_returns_2018_time_rerun.png)|
+	|-|-|
+	
 ## Recommendations
 1. There was a significant difference in the performance of green energy stocks between 2017 and 2018. 
 2. All the stocks except one (TERP) traded positively over 2017, while most lost value in 2018. 
