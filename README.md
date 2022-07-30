@@ -77,9 +77,9 @@ The timing results will show in a message box for each analysis run.
 	
 	- Next, we restructured the loops separately so that the calculations' loop is separate from the output loop, with the latter using the values stored in the arrays during the last loop, in addition to using the ticker index for reference in all calculations. 
 	
-	|![Calculations Loop in Refactored Code.](./Resources/refactored_loops1.png)| 
+	|![Calculations Loop in Refactored Code.](./Resources/refactored_loops_calculation.png)| 
 	|-|
-	|![Output Loop in Refactored Code.](./Resources/refactored_loops2.png)|
+	|![Output Loop in Refactored Code.](./Resources/refactored_loops_output.png)|
 
 	- We also add formatting code to the same subroutine to merge steps of output for the user instead of clicking two buttons to get the desired view of the results. 
 	
