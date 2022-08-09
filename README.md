@@ -1,13 +1,12 @@
-# Stock-analysis
-This project will explore green energy stock performance by analyzing financial data using VBA.
+# Green_Energy_Stocks_Analysis_VBA
+This project explores green energy stock performance by analyzing financial data using VBA.
 
 ## Background
-
 Green energy investments are trendy, especially as the world increasingly moves toward a clean energy future. <br>
 Many investors believe that as fossil fuels get used up, there will be more and more reliance on alternative energy production. <br>
 
 There are many forms of green energy to invest in, including hydroelectricity, wind energy, geothermal energy, and bioenergy. 
-However, our clients are decided to invest all their money into DAQO New Energy Corporation, a company that makes silicon wafers for solar panels. <br>
+However, our clients wish to invest all their money into DAQO New Energy Corporation, a company that makes silicon wafers for solar panels. <br>
 
 Out of concern about diversifying their funds, they have requested an analysis of other green energy stocks in addition to DAQO's stock. 
 
@@ -16,7 +15,6 @@ We will be using an extension to Excel built to automate tasks: Visual Basic for
 
 VBA is a programming language that interacts with Excel. It can read and write to cells and worksheets, make calculations, and use complex logic to perform analyses. 
 Using code to automate analyses allows us to reuse it with any stock and reduces the chance of accidents and errors. 
-
 
 ### Purpose
 Determine which green energy stock is a better investment for our clients. <br>
@@ -30,10 +28,10 @@ Additionally, we intend to build a robust code that can analyze thousands of sto
 5. Update the code to run the stock analysis for each year in the workbook. 
 6. Create a timer to assess the performance of the basic analysis code. 
 7. Refactor the code to loop through all the data one time. 
-8. Determine whether refactoring the code successfully made the VBA script run faster. 
+8. Determine whether refactoring the code had successfully made the VBA script run faster. 
 
 ## Resources
-- Data Sources: green_stocks.xlsx, green_stocks.xlsm
+- Data Sources: [green_stocks.xlsx](https://github.com/Magzzie/Stocks_Analysis/blob/main/green_stocks.xlsx), [green_stocks.xlsm](https://github.com/Magzzie/Stocks_Analysis/blob/main/VBA_Challenge.xlsm).
 - Software: Microsoft Excel
 - Libraries & Packages: Visual Basic for Applications (VBA)
 - Online Tools: [Stocks_Analysis_VBA GitHub Repository](https://github.com/Magzzie/Stocks_Analysis_VBA)
@@ -58,7 +56,7 @@ then export the sum to a cell in a different sheet (DQ Analysis worksheet) using
 		- Find the total volume for the current ticker.
 		- Find the starting price for the current ticker.
 		- Find the ending price for the current ticker.
-	- Sixth, we output the data for the current ticker to a new row, so we need to slightly alter the code from before so that the output for each ticker prints on a new row. This is a case where using Cells() is much easier than using Range().
+	- Sixth, we output the data for the current ticker to a new row, so we needed to slightly alter the code from before so that the output for each ticker got printed on a new row. In this case, using Cells() is much easier than using Range().
 - Next, we applied some formatting to the results worksheets to make them easier to read. Then, we constructed a new macro and wrote code to change font styles, add borders, and set number formats. 
 - Furthermore, we used conditional formatting to change the color of the cell based on its value.
 - We inserted buttons and assigned them to analyze macros on different workbook sheets. 
@@ -103,8 +101,8 @@ We started looking into other stocks that might be a better green energy investm
 	|![All Green Energy Stocks Returns - 2018](./Resources/all_stocks_returns_2018.png)|
 	|-|
 - Adding formatting to the worksheet tables makes it easier to read and understand at a glance. <br>
-	As such, we applied text and color formatting to the All Stock Analysis worksheet so that positive returns were green and negative returns red. <br>
-	This was feasible by looping through each of the returns, and if the return was positive, we made the background color green; if the return was negative, we made the background red; otherwise, we cleared the background color.
+	As such, we applied font and color formatting to the All Stock Analysis worksheet so that positive returns were green and negative returns red. <br>
+	The formatting step was feasible by looping through each of the returns, and if the return was positive, we made the background color green; if the return was negative, we made the background red; otherwise, we cleared the background color.
 	
 	|![All Green energy Stocks Returns - 2018 - Formatted](./Resources/all_stocks_returns_2018_formatted.png)|
 	|-|
@@ -122,7 +120,7 @@ We started looking into other stocks that might be a better green energy investm
 	|![All Stocks Analysis - 2018 - Timed.](./Resources/all_stocks_returns_2018_time.png)|
 - We intend to expand the dataset to include the entire stock market over the last few years. <br>
 Although our code worked well for a dozen stocks, it might not work well for thousands of stocks. <br>
-And if it does, it may take a long time to execute.
+Moreover, if it does, it may take a long time to execute.
 - Therefore, we refactored the code to loop through all the data once to collect the same information collected with the earlier code. 
 - Refactoring is a vital part of the coding process. When refactoring code, we are not adding new functionality; we want to make the code more efficient <br>
 	—by taking fewer steps, using less memory, or improving the logic of the code to make it easier for future users to read.
@@ -156,24 +154,3 @@ There were certain disadvantages to refactoring the code, including but not limi
 
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
