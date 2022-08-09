@@ -34,7 +34,7 @@ Additionally, we intend to build a robust code that can analyze thousands of sto
 - Data Sources: [green_stocks.xlsx](https://github.com/Magzzie/Stocks_Analysis/blob/main/green_stocks.xlsx), [green_stocks.xlsm](https://github.com/Magzzie/Stocks_Analysis/blob/main/VBA_Challenge.xlsm).
 - Software: Microsoft Excel
 - Libraries & Packages: Visual Basic for Applications (VBA)
-- Online Tools: [Stocks_Analysis_VBA GitHub Repository](https://github.com/Magzzie/Stocks_Analysis_VBA)
+- Online Tools: [Stocks_Analysis_VBA GitHub Repository](https://github.com/Magzzie/Green_Energy_Stocks_Analysis_VBA)
 
 ## Methods & Code
 Visual Basic for Applications typically referred to as "VBA," is often used in the finance industry.
